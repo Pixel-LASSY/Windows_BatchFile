@@ -13,10 +13,10 @@ cd C:\Windows
 del /q Prefetch
 
 rem InterNetCache_Delete
-del /Q C:\Users\%username%\AppData\Local\Microsoft\Windows\INetCache\IE\*.*
+del /q C:\Users\%username%\AppData\Local\Microsoft\Windows\INetCache\IE\*.*
 
 rem DownloadProgramFiles_Delete
-del /Q C:\Windows\Downloaded Program Files\*.*
+del /q C:\Windows\Downloaded Program Files\*.*
 
 rem RecycleBin_Delete
 rd /s /q %SYSTEMDRIVE%\$Recycle.bin
@@ -36,6 +36,15 @@ del /a:h /q IconCache.db
 rem Windows_Log_Delete
 cd C:\
 del /s *.log
+
+rem Memory_DMP
+del /q C:\Windows\MEMORY.DMP
+
+rem Disk_CleanUp
+Cleanmgr /sageset:65535 & Cleanmgr /sagerun:65535
+
+rem Windows_Error
+del /q C:\ProgramData\Microsoft\Windows\WER\ReportQueue
 
 rem 
 cd C:\Windows
