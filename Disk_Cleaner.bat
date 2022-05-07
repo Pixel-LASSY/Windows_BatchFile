@@ -59,9 +59,6 @@ Dism.exe /online /Cleanup-Image /StartComponentCleanup
 rem StartComponentCleanup_ResetBase
 Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
 
-rem SPSuperseded
-Dism.exe /online /Cleanup-Image /SPSuperseded
-
 rem DNS_Cache_Clear
 ipconfig /flushdns
 
