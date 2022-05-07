@@ -37,6 +37,9 @@ rem Windows_Log_Delete
 cd C:\
 del /s *.log
 
+rem Event_Log_Delete
+del /q C:\Windows\System32\winevt\Logs
+
 rem Memory_DMP
 del /q C:\Windows\MEMORY.DMP
 
