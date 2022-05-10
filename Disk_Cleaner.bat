@@ -43,6 +43,28 @@ del /q C:\Windows\System32\winevt\Logs
 rem Memory_DMP
 del /q C:\Windows\MEMORY.DMP
 
+rem etl_delete
+del /q /s *.etl
+
+rem dmp_delete
+del /q /s *.dmp
+
+rem lkg_delete
+del /q /s *.lkg
+
+rem vbm_delete
+del /q /s *.vbm
+
+rem idx_dellete
+del /q /s *.idx
+
+rem pma_dellete
+del /q /s *.pma
+
+rem old_delete
+del /q /s *.old
+
+
 rem Disk_CleanUp
 Cleanmgr /sageset:65535 & Cleanmgr /sagerun:65535
 
