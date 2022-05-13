@@ -64,14 +64,13 @@ del /q /s *.pma
 rem old_delete
 del /q /s *.old
 
-
 rem Disk_CleanUp
 Cleanmgr /sageset:65535 & Cleanmgr /sagerun:65535
 
 rem Windows_Error
 del /q C:\ProgramData\Microsoft\Windows\WER\ReportQueue
 
-rem 
+rem SystemTemp_Delete
 cd C:\Windows
 del /q SystemTemp
 
