@@ -1,3 +1,5 @@
+@echo off
+
 sc config "UsoSvc" start= auto
 sc config "wuauserv" start= auto
 net stop UsoSvc
